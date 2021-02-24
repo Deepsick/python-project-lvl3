@@ -32,11 +32,11 @@ html_name = build_name(base_name, ".html")
 file_folder_name = build_name(base_name, "_files")
 
 map_status_to_route = {
-  "500": 'server-error',
-  "404": 'not-found',
-  "401": 'unauthorized',
-  "400": 'bad',
-  "403": 'forbidden'
+    "500": 'server-error',
+    "404": 'not-found',
+    "401": 'unauthorized',
+    "400": 'bad',
+    "403": 'forbidden'
 }
 
 
