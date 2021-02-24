@@ -77,7 +77,7 @@ def test_page_loader(requests_mock):
 def test_file_system_error(requests_mock):
     """Check that page loader throws correct file system errors."""
     requests_mock.get(URL)
-    
+
     with pytest.raises(PermissionError):
         assert download(URL, '/sys')
 
@@ -87,14 +87,14 @@ def test_file_system_error(requests_mock):
     with pytest.raises(NotADirectoryError):
         assert download(URL, get_path('initial.html'))
 
+
 @pytest.mark.parametrize('status', map_status_to_route.keys())
 def test_http_errors(requests_mock, status):
     """Check that page loader returns correct http statuses."""
     route = map_status_to_route[status]
     url = urljoin(URL, route)
     requests_mock.get(url, status_code=int(status))
-    
+
     with tempfile.TemporaryDirectory() as output:
         with pytest.raises(requests.exceptions.HTTPError):
             download(url, output)
-
