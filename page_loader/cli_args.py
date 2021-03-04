@@ -1,4 +1,5 @@
 import argparse
+from os import getcwd
 
 
 def parse():
@@ -9,7 +10,7 @@ def parse():
         '-o',
         '--output',
         help='output folder path',
-        default='.'
+        default=getcwd()
     )
     parser.add_argument('url')
     return parser.parse_args()
