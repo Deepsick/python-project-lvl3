@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Deepsick/python-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/Deepsick/python-project-lvl3/actions)
-[![Node CI](https://github.com/Deepsick/backend-project-lvl3/workflows/Node%20CI/badge.svg)](https://github.com/Deepsick/backend-project-lvl3/actions)
+[![Github Actions Status](https://github.com/Deepsick/python-project-lvl3/workflows/Python%20CI/badge.svg)](https://github.com/Deepsick/python-project-lvl3/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9fb96d399ada0c5a68e9/maintainability)](https://codeclimate.com/github/Deepsick/python-project-lvl3/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9fb96d399ada0c5a68e9/test_coverage)](https://codeclimate.com/github/Deepsick/python-project-lvl3/test_coverage)
 
